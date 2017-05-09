@@ -11,7 +11,7 @@
 }
 
 .garage_open {
-  border: none;
+  border-color: transparent;
 }
 
 .garage-bg {
@@ -142,4 +142,16 @@ body {
 
 .garage-control_red {
   background: red;
+}
+
+
+.garage-card {
+  background: rgba(#ccc, .5);
+  box-shadow: 0rem 0rem .3rem .3rem rgba(#424242,0.5);
+  min-height: 10rem;
+  left: 1.5rem;
+  padding: 0 1.6rem;
+  position: fixed;
+  top: 10rem;
+  width: 20rem;
 }

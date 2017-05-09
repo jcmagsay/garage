@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
+import GarageCard from 'pages/garage/garage-card';
 
 export default class Garage extends Component {
   constructor () {
@@ -66,9 +67,10 @@ export default class Garage extends Component {
     );
     return (
       <div className="garage-page">
+        <GarageCard />
         <div
           className="garage-bg"
-          style={{ 'background-image': `url(${require('media/images/garage.png')})` }}
+          style={{ 'backgroundImage': `url(${require('media/images/garage.png')})` }}
         ></div>
         <section className={garageClasses}>
           <div className="garage-controls">
