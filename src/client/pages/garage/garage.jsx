@@ -63,16 +63,18 @@ export default class Garage extends Component {
     );
     const doorClasses = classNames(
       'garage-door',
-      { 'garage-door_open': this.state.isOpen }
+      {
+        'garage-door_open': this.state.isOpen
+      }
     );
     return (
       <div className="garage-page">
         <GarageCard />
-        <div
-          className="garage-bg"
-          style={{ 'backgroundImage': `url(${require('media/images/garage.png')})` }}
-        ></div>
         <section className={garageClasses}>
+          <div
+            className="garage-bg"
+            style={{ 'backgroundImage': `url(${require('media/images/garage.png')})` }}
+          ></div>
           <div className="garage-controls">
             <button
               className="garage-control garage-control_green"
@@ -85,7 +87,7 @@ export default class Garage extends Component {
           </div>
           <div className={doorClasses}>
             <div className="garage-front">
-              {[...Array(16)].map((x, i) =>
+              {[...Array(20)].map((x, i) =>
                 <div className="garage-panel" key={i}>
                   <div className="garage-panelGlass">
                     <div className="garage-panelDescription"></div>
@@ -96,28 +98,28 @@ export default class Garage extends Component {
             <div className="garage-edges"></div>
           </div>
           <div className="garage-bikeRack">
-            {/*
             <img
               src={require('media/images/crosstrail.png')}
               height="100%"
-              width="50%"
+              width="75%"
             />
+            {/*
             <img
               src={require('media/images/hardrock.png')}
               height="100%"
-              width="50%"
+              width="75%"
             />
             <img
               src={require('media/images/s-works-epic.png')}
               height="100%"
-              width="50%"
+              width="75%"
             />
-            */}
             <img
               src={require('media/images/stunt-jumper.png')}
               height="100%"
               width="75%"
             />
+            */}
           </div>
         </section>
       </div>
