@@ -1,6 +1,2 @@
-$background: rgba(0,0,0, 0.8);
-
-body {
-  background: $background;
-  font-family: "Helvetica Neue", serif;
-}
+@import 'base/elements';
+@import 'objects/garage/garage';

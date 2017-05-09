@@ -40,6 +40,10 @@ module.exports = {
         'use': ExtractTextPlugin.extract(
           ['css', 'postcss', 'sass']
         )
+      },
+      {
+        'test': /\.(png|jpeg)$/,
+        'use': 'file?name=images/[name].[ext]'
       }
     ]
   },
@@ -48,11 +52,12 @@ module.exports = {
       'styles': path.resolve(__dirname, './src/assets/styles'),
       'client': path.resolve(__dirname, './src/client'),
       'components': path.resolve(__dirname, './src/client/components'),
+      'images': path.resolve(__dirname, './src/assets/images'),
       'layout': path.resolve(__dirname, './src/client/layout'),
       'pages': path.resolve(__dirname, './src/client/pages'),
       'routes': path.resolve(__dirname, './src/routes')
     },
-    'extensions': ['.js', '.json', '.jsx', '.scss']
+    'extensions': ['.js', '.json', '.jsx', '.scss', '.jpeg']
   },
   'resolveLoader': {
     'moduleExtensions': ['-loader']

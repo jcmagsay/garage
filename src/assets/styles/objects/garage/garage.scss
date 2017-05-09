@@ -1,0 +1,105 @@
+.garage {
+  border: 0.2rem solid #dddddd;
+  bottom: 0;
+  position: fixed;
+  right: 1rem;
+  height: 100%;
+  top: 4rem;
+  width: 62%;
+  transition: all 0.35s ease;
+  transform: translateY(5rem);
+}
+
+.garage_open {
+  border: none;
+  transform: translateY(2rem);
+}
+
+.garage-panel {
+  border-bottom: 0.2rem solid #dddddd;
+  box-sizing: border-box;
+  flex-basis: 25%;
+  height: 10.25rem;
+  position: relative;
+  &::before {
+    bottom: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.garage-panelGlass {
+  height: 100%;
+  position: relative;
+  &::before {
+    background: rgba(#424242, 0.95);
+    border: 1rem solid black;
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+  &::after {
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    border: 2rem solid transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+.garage-bike {
+  position: absolute;
+}
+
+/* Set-up */
+body {
+	-webkit-perspective: 100rem; /* <-NB */
+}
+
+/* Container box to set the sides relative to */
+.garage-door {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  transition: transform 0.5s; /* Animate the transform properties */
+  transform-style: preserve-3d; /* <-NB */
+}
+.garage-door_open {
+  transform: rotateX(89deg); /* Text bleed at 90º */
+}
+
+/* The two faces of the cube */
+.garage-front,
+.garage-edges {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 10rem;
+}
+
+/* Position the faces */
+.garage-front {
+  height: 10rem;
+  transform: translateZ(50px);
+}
+
+.garage-edges {
+  height: 2rem;
+  transform: rotateX(-90deg) translateZ(-50px);
+}
+
+.garage-bikeRack {
+  display: flex;
+  justify-content: center;
+}
