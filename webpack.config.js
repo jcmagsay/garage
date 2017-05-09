@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         'test': /\.(png|jpeg)$/,
-        'use': 'file?name=media/images/[name].[ext]'
+        'use': 'file?name=src/assets/media/images/[name].[ext]'
       }
     ]
   },
