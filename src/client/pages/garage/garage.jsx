@@ -44,10 +44,15 @@ export default class Garage extends Component {
 
   setUpHandlers() {
     this.openGarage = this.openGarage.bind(this);
+    this.closeGarage = this.closeGarage.bind(this);
   }
 
   openGarage() {
-    this.setState({'isOpen': !this.state.isOpen});
+    this.setState({'isOpen': true});
+  }
+
+  closeGarage() {
+    this.setState({'isOpen': false});
   }
 
   render() {
@@ -65,8 +70,17 @@ export default class Garage extends Component {
           className="garage-bg"
           style={{ 'background-image': `url(${require('media/images/garage.png')})` }}
         ></div>
-        <button onClick={this.openGarage}>Open Garage</button>
         <section className={garageClasses}>
+          <div className="garage-controls">
+            <button
+              className="garage-control garage-control_green"
+               onClick={this.openGarage}
+            ></button>
+            <button
+              className="garage-control garage-control_red"
+               onClick={this.closeGarage}
+            ></button>
+          </div>
           <div className={doorClasses}>
             <div className="garage-front">
               {[...Array(16)].map((x, i) =>

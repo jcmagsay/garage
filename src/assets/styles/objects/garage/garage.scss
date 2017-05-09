@@ -12,7 +12,6 @@
 
 .garage_open {
   border: none;
-  transform: translateY(2rem);
 }
 
 .garage-bg {
@@ -105,15 +104,42 @@ body {
 /* Position the faces */
 .garage-front {
   height: 10rem;
-  transform: translateZ(50px);
+  transform: translateZ(90px);
 }
 
 .garage-edges {
   height: 2rem;
-  transform: rotateX(-90deg) translateZ(-50px);
+  transform: rotateX(-90deg) translateZ(-90px);
 }
 
 .garage-bikeRack {
   display: flex;
   justify-content: center;
+}
+
+.garage-controls {
+  align-items: center;
+  background: #43464B;
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+  justify-content: space-around;
+  position: absolute;
+  width: 3rem;
+  transform: translate(-5rem, 20rem);
+}
+
+.garage-control {
+  border-radius: 50%;
+  box-shadow: 0rem 0rem .1rem .1rem rgba(#ccc,0.5);
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.garage-control_green {
+  background: green;
+}
+
+.garage-control_red {
+  background: red;
 }
