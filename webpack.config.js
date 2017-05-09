@@ -14,7 +14,7 @@ module.exports = {
   'entry': './src/index.js',
   'output': {
     'path': path.resolve('public/assets'),
-    'publicPath': process.env.NODE_ENV === 'production' ? '/assets/' : '/',
+    'publicPath': process.env.NODE_ENV === 'production' ? './assets/' : '/',
     'filename': 'bundle.js'
   },
   'module': {
@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         'test': /\.(png|jpeg)$/,
-        'use': 'file?name=src/assets/media/images/[name].[ext]'
+        'use': 'file?name=media/images/[name].[ext]'
       }
     ]
   },
