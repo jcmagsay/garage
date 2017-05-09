@@ -78,23 +78,23 @@ export default class Garage extends Component {
           <div className="garage-bikeRack">
             {/*
             <img
-              src={require('images/crosstrail.png')}
+              src={require('media/images/crosstrail.png')}
               height="100%"
               width="50%"
             />
             <img
-              src={require('images/hardrock.png')}
+              src={require('media/images/hardrock.png')}
               height="100%"
               width="50%"
             />
             <img
-              src={require('images/s-works-epic.png')}
+              src={require('media/images/s-works-epic.png')}
               height="100%"
               width="50%"
             />
             */}
             <img
-              src={require('images/stunt-jumper.png')}
+              src={require('media/images/stunt-jumper.png')}
               height="100%"
               width="75%"
             />

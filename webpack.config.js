@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         'test': /\.(png|jpeg)$/,
-        'use': 'file?name=images/[name].[ext]'
+        'use': 'file?name=media/images/[name].[ext]'
       }
     ]
   },
@@ -52,7 +52,7 @@ module.exports = {
       'styles': path.resolve(__dirname, './src/assets/styles'),
       'client': path.resolve(__dirname, './src/client'),
       'components': path.resolve(__dirname, './src/client/components'),
-      'images': path.resolve(__dirname, './src/assets/images'),
+      'media': path.resolve(__dirname, './src/assets/media'),
       'layout': path.resolve(__dirname, './src/client/layout'),
       'pages': path.resolve(__dirname, './src/client/pages'),
       'routes': path.resolve(__dirname, './src/routes')
