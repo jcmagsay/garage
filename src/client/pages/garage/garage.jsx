@@ -61,6 +61,10 @@ export default class Garage extends Component {
     );
     return (
       <div className="garage-page">
+        <div
+          className="garage-bg"
+          style={{ 'background-image': `url(${require('media/images/garage.png')})` }}
+        ></div>
         <button onClick={this.openGarage}>Open Garage</button>
         <section className={garageClasses}>
           <div className={doorClasses}>

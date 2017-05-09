@@ -1,5 +1,4 @@
 $background: rgba(0,0,0,1);
-$bgImage: url(/assets/media/images/garage.png);
 
 html, body {
   background: $background;
@@ -8,11 +7,6 @@ html, body {
 }
 
 body {
-  background: $bgImage top center no-repeat;
-  background-attachment: fixed;
-  background-size: 150%;
-  background-position-y: -20rem;
-  background-position-x: 0;
   font-family: "Helvetica Neue", serif;
   margin: 0;
 }

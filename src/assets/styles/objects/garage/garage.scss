@@ -15,6 +15,20 @@
   transform: translateY(2rem);
 }
 
+.garage-bg {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 150%;
+  background-position-y: -20rem;
+  background-position-x: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1
+}
+
 .garage-panel {
   border-bottom: 0.2rem solid #dddddd;
   box-sizing: border-box;
