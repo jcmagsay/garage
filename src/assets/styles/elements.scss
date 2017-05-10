@@ -7,7 +7,9 @@ html, body {
 }
 
 body {
-  font-family: "Helvetica Neue", serif;
+  font-family: 'Roboto';
+  font-weight: 300;
+  line-height: 1;
   margin: 0;
 }
 
@@ -24,4 +26,8 @@ ul {
 a,
 a:-webkit-any-link {
   color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
 }

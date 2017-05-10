@@ -27,7 +27,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position-y: -20rem;
   background-position-x: 0;
   position: fixed;
   top: 0;
@@ -98,9 +97,9 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  transform: translateX(58.5%) translateY(100%);
-  width: 41.4%;
-  z-index: -1;
+  transform: translateX(42.7%) translateY(150%);
+  width: 30rem;
+  z-index: -3;
 }
 
 /*--------------------------------------------
@@ -122,15 +121,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   height: 50rem;
+  min-width: 55rem;
   position: fixed;
   transform-style: preserve-3d; /* <-NB */
-  transform: translateX(58.5%) translateY(19%);
+  transform: translateX(24%) translateY(19%);
   transition: transform 0.5s; /* Animate the transform properties */
-  width: 41.4%;
+  width: 47%;
+  z-index: -2;
 }
 
 .garage-door_open {
-  transform: rotateX(89deg) translate3d(58.5%, 19%, 10rem);
+  transform: rotateX(89deg) translate3d(24%, 19%, 10rem);
 }
 
 /*--------------------------------------------

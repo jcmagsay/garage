@@ -1,0 +1,26 @@
+/*--------------------------------------------
+ GARAGE STYLES
+---------------------------------------------- */
+
+/*--------------------------------------------
+ GARAGE DOOR STYLES
+---------------------------------------------- */
+
+/* Container box to set the sides relative to */
+.garage-door {
+  box-shadow: 0rem 1.4rem 1rem .1rem rgba(#ccc, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  height: 50rem;
+  min-width: 55rem;
+  position: fixed;
+  transform-style: preserve-3d; /* <-NB */
+  transform: translateX(46%) translateY(70%);
+  transition: transform 0.5s; /* Animate the transform properties */
+  width: 47%;
+  z-index: -2;
+}
+
+.garage-door_open {
+  transform: rotateX(89deg) translate3d(46%, 70%, 10rem);
+}
