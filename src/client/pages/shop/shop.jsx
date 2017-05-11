@@ -148,8 +148,8 @@ export default class Shop extends Component {
                     <i className="mdl-list__item-avatar">
                       <img
                         src="http://sc01.alicdn.com/kf/HTB1t2fyOpXXXXa7XXXXq6xXFXXXY/Mountain-Bike-types-tangze-disc-brake-price.jpg"
-                        height="4rem"
-                        width="4rem"
+                        height="100%"
+                        width="100%"
                       />
                     </i>
                     <span>{part.name}</span>
