@@ -46,12 +46,12 @@ export default class Stats extends Component {
               <h6>{`So glad that I found Jason. I was tired of going to bike shops and dealing with rude and under-educated stoner kids. Jason was super helpful and priced reasonably. I'll definitely  schedule my next service with him.`}</h6>
             </div>
             <div className="mdl-card__actions mdl-card--border">
-              <Link to="/social" className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              <a className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                 More Reviews
-              </Link>
-              <Link to="/social" className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              </a>
+              <a className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                 Make Appointment
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -65,12 +65,12 @@ export default class Stats extends Component {
               <h6>{`Ali was awesome. No hassles and a great resource for tips and tricks. She helped me understand why my bike was in bad shape and I can now work on my bike in the future by myself. Thanks Ali, 5 stars for great service!`}</h6>
             </div>
             <div className="mdl-card__actions mdl-card--border">
-              <Link to="/social" className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              <a className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                 More Reviews
-              </Link>
-              <Link to="/social" className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              </a>
+              <a className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                 Make Appointment
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -84,12 +84,12 @@ export default class Stats extends Component {
               <h6>{`Mark was really great. He specialized in new bike builds. I ordered my bike from Specialized.com and I didn't realize that I would have to put it together. Mark does builds starting at $20.`}</h6>
             </div>
             <div className="mdl-card__actions mdl-card--border">
-              <Link to="/social" className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              <a className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                 More Reviews
-              </Link>
-              <Link to="/social" className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              </a>
+              <a className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                 Make Appointment
-              </Link>
+              </a>
             </div>
           </div>
         </div>
