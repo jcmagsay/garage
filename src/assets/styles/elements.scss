@@ -17,15 +17,15 @@ body {
 }
 
 header {
-  height: 2rem;
+  height: 0rem;
 }
 
 main {
-  height: calc(100% - 4rem);
+  height: calc(100%);
 }
 
 footer {
-  height: 2rem;
+  display: none;
 }
 
 ul {
@@ -68,4 +68,5 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo {
   position: absolute;
+  z-index: 24;
 }
