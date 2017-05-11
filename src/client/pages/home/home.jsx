@@ -16,7 +16,7 @@ export default class Home extends Component {
       {'description': 'Social', 'path':'face', 'icon': 'face'}
     ];
     return (
-      <section className="home-options">
+      <section className="page">
         <div className="mdl-list">
           {this.choices.map((choice, i) => {
             return (

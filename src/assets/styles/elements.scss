@@ -79,3 +79,10 @@ h1, h2, h3, h4, h5, h6 {
 .mdl-list_noMarginRight {
   margin-right: 0 !important;
 }
+
+.page {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
