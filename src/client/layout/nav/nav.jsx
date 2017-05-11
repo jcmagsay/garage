@@ -10,7 +10,7 @@ export default class Nav extends Component {
   render() {
     return (
       <ul className="nav">
-        {routes.map((route, i) => {
+        {routes.nav.map((route, i) => {
           return (
             <li
               key={`navlink-${i}`}
@@ -21,7 +21,12 @@ export default class Nav extends Component {
                 activeClassName="navLink_active"
                 to={route.path}
               >
-                {route.name}
+                <img
+                  className="logo"
+                  height="100"
+                  src={require('media/images/specialized-logo.png')}
+                  alt="specialized digital"
+                />
               </NavLink>
             </li>
           )

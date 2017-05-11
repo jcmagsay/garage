@@ -18,7 +18,7 @@ export default class Main extends React.Component {
           </header>
           <main id="main" role="main">
             <Switch>
-              {routes.map((route, i) =>
+              {routes.all.map((route, i) =>
                 <Route
                   exact
                   key={`route-${i}`}
@@ -32,9 +32,7 @@ export default class Main extends React.Component {
               )}
             </Switch>
           </main>
-          <footer>
-            Footer
-          </footer>
+          <footer></footer>
         </div>
       </Router>
     );
