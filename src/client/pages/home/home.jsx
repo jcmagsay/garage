@@ -1,3 +1,4 @@
+
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
@@ -11,12 +12,12 @@ export default class Home extends Component {
       {'description': 'Garage', 'path':'garage', 'icon': 'view_array'},
       {'description': 'Shop', 'path':'shop', 'icon': 'shopping_cart'},
       {'description': 'Ride', 'path':'ride', 'icon': 'directions_bike'},
-      {'description': 'Build it', 'path':'build', 'icon': 'build'},
-      {'description': 'Stats', 'path':'notifications', 'icon': 'notifications'},
-      {'description': 'Social', 'path':'face', 'icon': 'face'}
+      {'description': 'Find a Pro', 'path': 'professionals', 'icon': 'build'},
+      {'description': 'Stats', 'path':'stats', 'icon': 'insert_chart'},
+      {'description': 'Social', 'path':'social', 'icon': 'face'}
     ];
     return (
-      <section className="page">
+      <section className="page home">
         <div className="mdl-list">
           {this.choices.map((choice, i) => {
             return (

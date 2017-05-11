@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
-export default class Ride extends Component {
+export default class Stats extends Component {
   constructor () {
     super();
   }
@@ -12,8 +12,8 @@ export default class Ride extends Component {
         <style>
           {`
             .demo-card-square.mdl-card {
-              width: 320px;
-              height: 320px;
+              width: 400px;
+              height: 400px;
               margin: 0 0 0 3.2rem;
             }
             .demo-card-square1 > .mdl-card__title {
@@ -38,57 +38,57 @@ export default class Ride extends Component {
 
           <div className="demo-card-square demo-card-square1 mdl-card mdl-shadow--2dp">
             <div className="mdl-card__title mdl-card--expand">
-              <h2 className="mdl-card__title-text">Mountain Ride</h2>
+              <h2 className="mdl-card__title-text">Mountain Bike Stats</h2>
             </div>
             <div className="mdl-card__supporting-text">
-              <h3>Countdown</h3>
-              <div>20 minutes</div>
-              <h6>{`Meet at 7am on Canyon and 14th`}</h6>
+              <h3>Tuneup</h3>
+              <div>in 1000 miles</div>
+              <h6>{`You're at 1000 / 2000 miles`}</h6>
             </div>
             <div className="mdl-card__actions mdl-card--border">
               <Link to="/social" className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                View Riders
+                View More Stats
               </Link>
               <Link to="/social" className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                Chat
+                Find a bike pro
               </Link>
             </div>
           </div>
 
           <div className="demo-card-square demo-card-square2 mdl-card mdl-shadow--2dp">
             <div className="mdl-card__title mdl-card--expand">
-              <h2 className="mdl-card__title-text">Road Ride</h2>
+              <h2 className="mdl-card__title-text">Road Bike Stats</h2>
             </div>
             <div className="mdl-card__supporting-text">
-              <h3>Countdown</h3>
-              <div>2 days</div>
-              <h6>{`Meet at 7am on Canyon and 14th`}</h6>
+              <h3>Tuneup</h3>
+              <div>in 300 miles</div>
+              <h6>{`You're at 1700 / 2000 miles`}</h6>
             </div>
             <div className="mdl-card__actions mdl-card--border">
               <Link to="/social" className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                View Riders
+                View More Stats
               </Link>
               <Link to="/social" className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                Chat
+                Find a bike pro
               </Link>
             </div>
           </div>
 
           <div className="demo-card-square demo-card-square3 mdl-card mdl-shadow--2dp">
             <div className="mdl-card__title mdl-card--expand">
-              <h2 className="mdl-card__title-text">Training Ride</h2>
+              <h2 className="mdl-card__title-text">Training Bike Stats</h2>
             </div>
             <div className="mdl-card__supporting-text">
-              <h3>Countdown</h3>
-              <div>6 hours</div>
-              <h6>{`Meet at 12pm on Canyon and 14th`}</h6>
+              <h3>Tuneup</h3>
+              <div>in 500 miles</div>
+              <h6>{`You're at 1500 / 2000 miles`}</h6>
             </div>
             <div className="mdl-card__actions mdl-card--border">
               <Link to="/social" className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                View Riders
+                View More Stats
               </Link>
               <Link to="/social" className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                Chat
+                Find a bike pro
               </Link>
             </div>
           </div>
