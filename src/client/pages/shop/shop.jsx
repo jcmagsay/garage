@@ -8,12 +8,13 @@ export default class Shop extends Component {
     this.createTabSections();
 
     this.state = {
-      'activeTab': this.tabs.parts,
-      'drawerOpen': false
+      'activeTab': this.tabs.details,
+      'drawerOpen': true
     }
 
     this.openDrawer = this.openDrawer.bind(this);
     this.closeDrawer = this.closeDrawer.bind(this);
+    this.goBack = this.goBack.bind(this);
     this.swapDrawerSection = this.swapDrawerSection.bind(this);
   }
 
@@ -38,8 +39,11 @@ export default class Shop extends Component {
     }
   }
 
-  openDrawer() {
-    this.setState({ 'drawerOpen': true });
+  openDrawer(e) {
+    this.setState({
+      'activeTab': this.tabs.parts,
+      'drawerOpen': true
+    });
   }
 
   closeDrawer() {
@@ -47,6 +51,10 @@ export default class Shop extends Component {
       'activeTab': this.tabs.parts,
       'drawerOpen': false
     });
+  }
+
+  goBack() {
+    this.setState({'activeTab': this.tabs.details});
   }
 
   swapDrawerSection(e) {
@@ -129,7 +137,7 @@ export default class Shop extends Component {
     ];
     return(
       <section className="bike-parts">
-        <h2>Parts</h2>
+        <h2>Parts: Brakes</h2>
         <h6><em>Your bike is currently equipt with Hydraulic Brakes**</em></h6>
         <ul className="mdl-list">
           {this.parts.map((part, i) => {
@@ -238,7 +246,7 @@ export default class Shop extends Component {
   }
 
   _renderRecommendations() {
-    const recommendations = this.parts.slice(0, 3);
+    const recommendations = this.parts.slice(3, 7);
     return(
       <section className="bike-recommendations">
         <h2>Recommendations</h2>
@@ -302,7 +310,14 @@ export default class Shop extends Component {
           </a>
         </section>
         <div className={drawerClasses}>
-          <div className="bikeDrawer-tabs">
+          <div className={this.state.activeTab.id === "details" ? 'isVisuallyHidden' : 'bikeDrawer-tabs'}>
+            <a onClick={this.goBack}>
+              <i className="material-icons">arrow_back</i>
+              <h4 className="inline">Back to Details</h4>
+            </a>
+            <h2></h2>
+          </div>
+          <div className={this.state.activeTab.id === "details" ? 'isVisuallyHidden' : 'bikeDrawer-tabs'}>
             <a id="parts" href="javascript:void(0);" onClick={this.swapDrawerSection}>Parts</a>
             <a id="recommendations" href="javascript:void(0);" onClick={this.swapDrawerSection}>Recommendations</a>
           </div>
