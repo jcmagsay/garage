@@ -1,0 +1,16 @@
+.home-options {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  .mdl-list {
+    display: flex;
+    margin: auto;
+  }
+  .mdl-list__item-avatar {
+    height: 10rem;
+    line-height: 3.25;
+    text-align: center;
+    width: 10rem;
+  }
+}
