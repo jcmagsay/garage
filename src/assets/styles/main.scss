@@ -1,12 +1,18 @@
-$VIEWPORT_XL: 2440px;
+$VIEWPORT_LG: 1200px;
+$VIEWPORT_XL: 2000px;
 
 @import 'elements';
 @import 'objects/garage/garage';
+@import 'objects/avatar/avatar';
 
 
 /* ----------------------
  XL MONITOR
 ------------------------- */
+
+@media only screen and (min-width: $VIEWPORT_LG) {
+  @import "screen_lg";
+}
 
 @media only screen and (min-width: $VIEWPORT_XL) {
   @import "screen_xl";

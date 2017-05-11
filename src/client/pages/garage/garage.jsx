@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import classNames from 'classnames';
 import GarageCard from 'pages/garage/garage-card';
 
@@ -98,11 +99,14 @@ export default class Garage extends Component {
             <div className="garage-edges"></div>
           </div>
           <div className="garage-bikeRack">
-            <img
-              src={require('media/images/crosstrail.png')}
-              height="100%"
-              width="75%"
-            />
+            <Link to="/shop">
+              <img
+                className="garage-bike"
+                src={require('media/images/crosstrail.png')}
+                height="100%"
+                width="75%"
+              />
+            </Link>
             {/*
             <img
               src={require('media/images/hardrock.png')}

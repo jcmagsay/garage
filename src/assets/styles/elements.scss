@@ -1,16 +1,32 @@
 $background: rgba(0,0,0,1);
 
-html, body {
-  background: $background;
+html, body, #app, div[data-reactroot], main {
   height: 100%;
   width: 100%;
 }
 
+
 body {
+  background: $background;
+  color: #ddd;
   font-family: 'Roboto';
   font-weight: 300;
   line-height: 1;
   margin: 0;
+}
+
+header {
+  background: orange;
+  height: 2rem;
+}
+
+main {
+  height: calc(100% - 4rem);
+}
+
+footer {
+  background: orange;
+  height: 2rem;
 }
 
 ul {

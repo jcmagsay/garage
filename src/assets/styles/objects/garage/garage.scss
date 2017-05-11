@@ -2,16 +2,15 @@
  GARAGE STYLES
 ---------------------------------------------- */
 
+.garage-page {
+  height: 100%;
+  width: 100%;
+}
+
 .garage {
-  // border: 0.2rem solid #dddddd;
-  // bottom: 0;
   position: relative;
-  // right: 1rem;
-  // height: 66.1%;
-  // top: 4rem;
-  // width: 62%;
-  // transition: all 0.35s ease;
-  // transform: translateY(5rem);
+  height: 100%;
+  width: 100%;
 }
 
 .garage_open {
@@ -23,17 +22,79 @@
 ---------------------------------------------- */
 
 .garage-bg {
-  background-position: top center;
+  background-position: top left;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position-x: 0;
-  position: fixed;
-  top: 0;
-  bottom: 0;
+  // background-position-x: 0;
+  // position: fixed;
+  // top: 0;
+  // bottom: 0;
+  height: 100%;
   width: 100%;
-  z-index: -1
+  z-index: -2
 }
+
+/*--------------------------------------------
+ PERSPECTIVE BODY STYLES
+---------------------------------------------- */
+
+/* Set-up */
+body {
+	-webkit-perspective: 100rem; /* <-NB */
+}
+
+/*--------------------------------------------
+ GARAGE DOOR STYLES
+---------------------------------------------- */
+
+/* Container box to set the sides relative to */
+.garage-door {
+  box-shadow: 0rem 1.4rem 1rem .1rem rgba(#ccc, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  height: 50rem;
+  min-width: 55rem;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  transform-style: preserve-3d; /* <-NB */
+  transform: translateX(24%) translateY(19%);
+  transition: transform 0.5s; /* Animate the transform properties */
+  width: 47%;
+  z-index: -2;
+}
+
+.garage-door_open {
+  transform: rotateX(89deg) translate3d(24%, 19%, 10rem);
+}
+
+/*--------------------------------------------
+ GARAGE FRONT & EDGES STYLES
+---------------------------------------------- */
+
+/* The two faces of the cube */
+.garage-front,
+.garage-edges {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 10rem;
+}
+
+/* Position the faces */
+.garage-front {
+  max-width: 55rem;
+  height: 10rem;
+  margin: 0 auto;
+  transform: translateZ(90px);
+}
+
+.garage-edges {
+  height: 2rem;
+  transform: rotateX(-90deg) translateZ(-90px);
+}
+
 
 /*--------------------------------------------
  GARAGE PANEL STYLES
@@ -87,78 +148,6 @@
 }
 
 /*--------------------------------------------
- GARAGE BIKE RACK STYLES
----------------------------------------------- */
-
-.garage-bike {
-}
-
-.garage-bikeRack {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  transform: translateX(42.7%) translateY(150%);
-  width: 30rem;
-  z-index: -3;
-}
-
-/*--------------------------------------------
- PERSPECTIVE BODY STYLES
----------------------------------------------- */
-
-/* Set-up */
-body {
-	-webkit-perspective: 100rem; /* <-NB */
-}
-
-/*--------------------------------------------
- GARAGE DOOR STYLES
----------------------------------------------- */
-
-/* Container box to set the sides relative to */
-.garage-door {
-  box-shadow: 0rem 1.4rem 1rem .1rem rgba(#ccc, 0.5);
-  display: flex;
-  flex-wrap: wrap;
-  height: 50rem;
-  min-width: 55rem;
-  position: fixed;
-  transform-style: preserve-3d; /* <-NB */
-  transform: translateX(24%) translateY(19%);
-  transition: transform 0.5s; /* Animate the transform properties */
-  width: 47%;
-  z-index: -2;
-}
-
-.garage-door_open {
-  transform: rotateX(89deg) translate3d(24%, 19%, 10rem);
-}
-
-/*--------------------------------------------
- GARAGE FRONT & EDGES STYLES
----------------------------------------------- */
-
-/* The two faces of the cube */
-.garage-front,
-.garage-edges {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 10rem;
-}
-
-/* Position the faces */
-.garage-front {
-  height: 10rem;
-  transform: translateZ(90px);
-}
-
-.garage-edges {
-  height: 2rem;
-  transform: rotateX(-90deg) translateZ(-90px);
-}
-
-/*--------------------------------------------
  GARAGE CONTROLS STYLES
 ---------------------------------------------- */
 
@@ -171,7 +160,8 @@ body {
   justify-content: space-around;
   position: fixed;
   top: 30%;
-  left: 20%;
+  left: auto;
+  right: 20%;
   width: 3rem;
   transform: translate(-5rem, 20rem);
 }
@@ -196,7 +186,7 @@ body {
 ---------------------------------------------- */
 
 .garage-card {
-  background: rgba(#ccc, .5);
+  background: rgba(#ccc, .9);
   box-shadow: 0rem 0rem .3rem .3rem rgba(#424242,0.5);
   min-height: 10rem;
   left: 1.5rem;
@@ -204,4 +194,38 @@ body {
   position: fixed;
   top: 10rem;
   width: 20rem;
+  z-index: 1;
+}
+
+
+/*--------------------------------------------
+ GARAGE BIKE RACK STYLES
+---------------------------------------------- */
+
+.garage-bikeRack {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 5%;
+  opacity: 0;
+  transform: translateX(-5rem);
+  transition-delay: 0.5s;
+  transition: all 1s ease;
+  width: 40%;
+  z-index: -4;
+  a {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.garage-bike {
+  margin: 0 auto;
+}
+
+.garage_open {
+  .garage-bikeRack {
+    opacity: 1;
+    z-index: 1;
+  }
 }

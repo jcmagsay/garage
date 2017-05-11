@@ -11,21 +11,20 @@
   box-shadow: 0rem 1.4rem 1rem .1rem rgba(#ccc, 0.5);
   display: flex;
   flex-wrap: wrap;
-  height: 60rem;
+  height: 50rem;
   min-width: 55rem;
   position: fixed;
   transform-style: preserve-3d; /* <-NB */
-  transform: translateX(44%) translateY(50%);
+  transform: translateX(45%) translateY(44%);
   transition: transform 0.5s; /* Animate the transform properties */
-  width: 55%;
+  width: 47%;
   z-index: -2;
 }
 
 .garage-door_open {
-  transform: rotateX(89deg) translate3d(44%, 50%, 10rem);
+  transform: rotateX(89deg) translate3d(45%, 44%, 10rem);
 }
 
-.garage-front {
-  max-width: 100%;
-  margin: 0;
+.garage-bikeRack {
+  transform: translateX(37rem);
 }
