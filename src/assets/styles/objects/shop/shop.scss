@@ -1,0 +1,57 @@
+/*--------------------------------------------
+ SHOP STYLES
+---------------------------------------------- */
+
+.shop {
+
+}
+
+/*--------------------------------------------
+ HOTSPOT STYLES
+---------------------------------------------- */
+
+@mixin hotspotPosition($height, $width, $top, $right, $bottom, $left) {
+  bottom: $bottom;
+  height: $height;
+  left: $left;
+  position: absolute;
+  right: $right;
+  top: $top;
+  width: $width;
+  z-index: 10;
+}
+
+.hotspot {
+  border: 0.2rem solid transparent;
+  opacity: 0;
+  transition: all 0.5s ease;
+  &:hover {
+    border: 0.2rem solid #00a1e1;
+    opacity: 1;
+  }
+}
+
+.bike-tireB {
+  @extend .hotspot;
+  @include hotspotPosition(50%, 30%, auto, auto, 15%, 0%);
+}
+
+.bike-pedals {
+  @extend .hotspot;
+  @include hotspotPosition(20%, 15%, auto, auto, 25%, 30%);
+}
+
+.bike-handlebars {
+  @extend .hotspot;
+  @include hotspotPosition(8%, 8%, 10%, 45%, auto, auto);
+}
+
+.bike-saddle {
+  @extend .hotspot;
+  @include hotspotPosition(7%, 12%, 10%, auto, auto, 17%);
+}
+
+.bike-brakes {
+  @extend .hotspot;
+  @include hotspotPosition(14%, 8%, auto, 36%, 33%, auto);
+}

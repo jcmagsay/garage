@@ -1,0 +1,40 @@
+.bikeDrawer {
+  background: white;
+  color: black;
+  bottom: 0;
+  left: auto;
+  padding: 2.4rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.35s ease;
+  transform: translateX(100%);
+  width: 35rem;
+  a {
+    color: black;
+    padding: 0.2rem 0.8rem;
+    width: 100%;
+    z-index: 2;
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+.bikeDrawer_open {
+  transform: translateX(0);
+}
+
+.bikeDrawer-main {
+  margin-top: 1.6rem;
+}
+
+
+.bikeDrawer-footer {
+  bottom: 0;
+  left: 0;
+  padding: 2.4rem;
+  position: absolute;
+  text-align: right;
+  right: 0;
+}

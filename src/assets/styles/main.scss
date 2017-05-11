@@ -2,8 +2,10 @@ $VIEWPORT_LG: 1200px;
 $VIEWPORT_XL: 2000px;
 
 @import 'elements';
-@import 'objects/garage/garage';
 @import 'objects/avatar/avatar';
+@import 'objects/garage/garage';
+@import 'objects/shop/bike-drawer';
+@import 'objects/shop/shop';
 
 
 /* ----------------------

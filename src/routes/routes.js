@@ -7,14 +7,14 @@ import NotFound from 'pages/not-found/not-found';
 
 const routes = [
   {
+    'path': '/',
+    'name': 'S Digital',
+    'component': Home
+  },
+  {
     'path': '/garage',
     'name': 'Garage',
     'component': Garage
-  },
-  {
-    'path': '/',
-    'name': 'Home',
-    'component': Home
   },
   {
     'path': '/ride',
