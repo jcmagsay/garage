@@ -226,6 +226,13 @@ export default class Shop extends Component {
             );
           })}
         </ul>
+        <h2></h2>
+        <a
+          className="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+          href="https://www.specialized.com/us/en/equipment/components/drivetrain"
+        >
+          buy it!
+        </a>
       </section>
     );
   }
